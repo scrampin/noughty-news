@@ -1,4 +1,6 @@
-# Noughty News ![alt text](https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/news-128.png)
+# Noughty News
+
+![alt text](https://github.com/scrampin/noughty-news/blob/master/resources/images/headerImage.png?raw=true)
 
 ## Delivering news of absolutely nought value.
 

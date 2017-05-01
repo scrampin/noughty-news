@@ -32,7 +32,6 @@
     article = new Article(uniqueArticleData);
     // article.generateSummary(this.textSummary);
     article.generateImage();
-
     return article;
     };
   }

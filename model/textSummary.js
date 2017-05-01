@@ -4,19 +4,17 @@
 
   function TextSummary() {
 
-    TextSummary.prototype.aylienURL = function(theUrl) {
+    TextSummary.prototype.aliyenURL = function(theUrl) {
       var defaultURL = "http://news-summary-api.herokuapp.com/aylien?apiRequestUrl=https://api.aylien.com/api/v1/summarize?url=";
       var sentences_number = 1
       var xmlHttp = new XMLHttpRequest();
       xmlHttp.open( "GET", defaultURL + theUrl, false ); // false for synchronous request
       xmlHttp.send( null );
-      return xmlHttp.responseText;
+      return JSON.parse(xmlHttp.responseText);
     }
 
-    TextSummary.prototype.generateSentences = function(aUrl) {
-      var data = this.aylienURL(aUrl);
-      var json = JSON.parse(data);
-      var sentences = json.sentences[0] + " " + json.sentences[1];
+    TextSummary.prototype.generateSentences = function(data) {
+      var sentences = data.sentences[0] + " " + data.sentences[1];
       return sentences;
     }
   }

@@ -22,7 +22,8 @@
   };
 
   Article.prototype.generateSummary = function(textSummary) {
-      this.summary = textSummary.generateSentences(this.url);
+      var data = textSummary.aliyenURL(this.url)
+      this.summary = textSummary.generateSentences(data);
   };
 
   exports.Article = Article;

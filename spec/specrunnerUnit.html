@@ -2,14 +2,23 @@
 <script src='../model/textSummary.js'></script>'
 <script src='../model/article.js'></script>'
 <script src='../model/guardianDataSourcing.js'></script>'
-<script src='../model/article-list.js'></script>'
+<script src='../model/articleList.js'></script>'
 
 <!-- test -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="../inSepiaParchment-0.0.1/mockJson.js"></script>
+<script src="../inSepiaParchment-0.0.1/mockAliyen.js"></script>
 <script src="../inSepiaParchment-0.0.1/assert.js"></script>
 <script src="./unit/ArticleTests.js"></script>
+<script src="./unit/ArticleListTests.js"></script>
+<script src="./unit/GuardianDataSourcingTests.js"></script>
+<script src="./unit/textSummaryTests.js"></script>
 
 <!-- test execution -->
 <script> unitTest(generateImageTest());
-        unitTest(textSummaryCall()); </script>
+        unitTest(textSummaryCall());
+        unitTest(storeListTest());
+        unitTest(createArticleTest());
+        unitTest(getArticleDataTest());
+        unitTest(generateSentencesTest());
+        </script>

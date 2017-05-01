@@ -54,6 +54,8 @@
     newsContainer.appendChild(hyperLink);
     // var summary = document.createElement('p');
 
+    
+
   }
   exports.displayArticles = displayArticles;
 })(this)

@@ -4,6 +4,9 @@ function TextSummaryDouble() {
   TextSummaryDouble.prototype.generateSentences = function() {
     return "Feeling lucky. Feeling ducky.";
   };
+  TextSummaryDouble.prototype.aliyenURL = function(url) {
+    return aliyenData;
+  }
 };
 
 function generateImageTest() {
